@@ -1,0 +1,1 @@
+//# sourceMappingURL=/Users/igor/workspace/TestAngular2/frontend/src/app/pages/client/IClients.js.map

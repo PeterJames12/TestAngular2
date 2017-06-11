@@ -1,0 +1,31 @@
+<div class="flex-container">
+    <div class="fc1">
+        <input [(ngModel)]="clientsFilter.firstName" type="text" placeholder="Search..." required>
+        <ul>
+        <li *ngFor="let client of clients | filterBy: clientsFilter" >
+            <a (click)="change(client)">{{client.firstName + " " + client.lastName}}</a>
+        </li>
+
+            <li *ngIf="(clients | filterBy: clientsFilter).length === 0">No matching elements</li>
+
+        </ul>
+    </div>
+    <div class="fc2">
+
+        <div class="avatar">
+            <img src="{{clientAvatar}}" alt="User">
+        </div>
+        <div class="fc-content">
+            <h2>{{clientFirstName + " " + clientLastName}}</h2>
+            <p>{{clientCompany}}</p>
+            <p>{{clientTitle}}</p>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container text-center">
+        <p>Github<a href="https://github.com/ncadvanced"> Link </a> 2017</p>
+    </div>
+</footer>
+

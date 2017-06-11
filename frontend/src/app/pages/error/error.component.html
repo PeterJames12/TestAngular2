@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-lg-offset-3 col-lg-6 col-sm-offset-3 col-sm-6" *ngIf="error">
+    <div class="panel">
+      <div class="panel-heading">
+        <b class="panel-title">Something went wrong...</b>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-sm-12 col-lg-4">
+            <img class="center-block" src="https://previews.123rf.com/images/refluo/refluo1406/refluo140600034/29264463-sad-kitten-Stock-Photo.jpg" alt="error-img">
+          </div>
+          <div class="col-sm-12 col-lg-offset-1 col-lg-7 text-center">
+            <h2 class="err-msg">ERROR {{error.status}}</h2>
+            <h5>{{error.message}}</h5>
+            <a href="javascript:history.back()">
+              <button class="btn btn-danger">Go back</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

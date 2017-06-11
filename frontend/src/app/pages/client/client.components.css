@@ -1,0 +1,61 @@
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 40px auto;
+}
+.flex-container > div{
+    flex-grow: 1;
+    padding: 15px;
+}
+.fc1 ul{
+    padding-left: 18px;
+    margin-top: 10px;
+}
+.fc1 ul li a{
+    color: #000;
+    text-transform: uppercase;
+    font-weight: normal;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    letter-spacing: 4px;
+}
+.fc1{
+    width: 30%;
+    background-color: #f1f1f1;
+}
+.fc1 input{
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #f1f1f1;
+    outline: none;
+
+}
+.fc2{
+    width: 70%;
+    clear: both;
+}
+.fc2 .avatar{
+    display: block;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+.fc2 img{
+    width: 110%;
+}
+.fc-content{
+    display: table;
+
+}
+.fc2 h2{
+    line-height: 1.2;
+    padding: 0 0 15px;
+    margin: 0;
+}
